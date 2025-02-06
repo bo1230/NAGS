@@ -29,6 +29,17 @@ The denoised high-quality image is obtained by passing the blind denoising netwo
 ### Real dataset:
 Follow the [link](https://pan.quark.cn/s/480dfec7a364) below to download our real dataset. The images in the dataset were taken at night by a Canon 60D.
 
+## Quickly start
+
+```
+python train.py --config configs/Real_datasets/bench.txt
+```
+If you want to view the results, please use the following code and ensure that you have installed TensorBoard
+
+```
+tensorboard --logdir=logs/bench
+```
+
 ## Training
 Training with synthetic datasets
 ```
@@ -36,7 +47,7 @@ python train.py --config configs/Synthetic_datasets/gain1/data2_benchflower_gain
 ```
 Training with real datasets
 ```
-python train.py --config configs/Real_datasets/trash.txt
+python train.py --config configs/Real_datasets/bench.txt
 ```
 
 ## Result
