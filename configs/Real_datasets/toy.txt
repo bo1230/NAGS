@@ -1,0 +1,13 @@
+model=logs/toy
+model_path=logs/toy
+source_path = data/toy
+test_path = data/toy
+
+gpu_id = 9
+
+llffhold=8
+
+iterations=3000
+
+port=2219
+eval=True
