@@ -3,8 +3,8 @@
 ## Installation
 Clone this repository
 ```
-git clone https://github.com/bo1230/NVS-from-NI.git 
-cd NVS-from-NI
+git clone https://github.com/bo1230/NAGS.git
+cd NAGS
 ```
 
 The code is tested with Python3.10, PyTorch==2.1.2+cu118 and cudatoolkit=11.8. To create a conda environment:
