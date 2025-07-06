@@ -1,4 +1,4 @@
-# NAGS: Noise-Aware Gaussian Splatting through Fine-Grained Noise Modeling
+# NAGS: Noise-Aware Gaussian Splatting through Noise-Content Disentanglement
 ![image](figure/overview.jpg) 
 ## Installation
 Clone this repository
