@@ -129,7 +129,7 @@ def training(output_file_path, mask_i, dataset, opt, pipe, testing_iterations, s
         Ll2 = l1_loss(noise, viewpoint_cam.pre_noise)
         Ll3 = l1_loss(image, viewpoint_cam.image_pre)
         maskloss = mask_i * mask.mean()
-        loss = maskloss + Ll1 + (1.0 - opt.lambda_dssim) * (Ll2 + Ll3) + opt.lambda_dssim * (1.0 - ssim(image, gt_image))
+        loss = maskloss + Ll1 + (1.0 - opt.lambda_dssim) * (Ll2 + Ll3) + opt.lambda_dssim * (1.0 - ssim(image, viewpoint_cam.image_pre))
         loss = loss + (0.001 * tv_loss(shuffle_rgb))
 
         loss.backward()
